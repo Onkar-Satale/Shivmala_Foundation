@@ -1,0 +1,81 @@
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.grid div {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, color 0.3s;
+    /* smooth dark mode transition */
+}
+
+/* Numbers inside cards */
+.grid div h2 {
+    margin-bottom: 10px;
+    color: #0ea5e9;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+body.dark .grid h2 {
+    color: #0ea5e9;
+    /* keep blue in dark mode as well */
+}
+
+body.dark .grid div {
+    background: #1e293b;
+    /* dark background for grid items */
+    color: #ffffff;
+    /* text color for readability */
+}
+
+body.dark .grid h2 {
+    color: #0ea5e9;
+    /* slightly lighter green for dark mode headings */
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* OPTIONAL: Add a subtle hover effect for dark mode */
+.grid div:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s;
+}
+
+body.dark .grid div:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* stronger shadow in dark mode */
+}
+
+.impact-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #111827;
+}
+
+body.dark .impact-heading {
+    color: #e2e8f0;
+}
+
+.impact-number {
+    color: #0ea5e9 !important;
+}

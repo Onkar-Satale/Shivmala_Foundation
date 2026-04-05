@@ -1,0 +1,75 @@
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.grid div {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, color 0.3s;
+    /* smooth dark mode transition */
+}
+
+.grid h3 {
+    margin-bottom: 10px;
+    color: #0ea5e9;
+}
+
+body.dark .grid div {
+    background: #1e293b;
+    /* dark background for grid items */
+    color: #ffffff;
+    /* text color for readability */
+}
+
+body.dark .grid h3 {
+    color: #0ea5e9;
+    /* slightly lighter green for dark mode headings */
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* OPTIONAL: Add a subtle hover effect for dark mode */
+.grid div:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s;
+}
+
+body.dark .grid div:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* stronger shadow in dark mode */
+}
+
+/* CENTER THE HEADING */
+section h2 {
+    text-align: center;
+    /* centers the heading */
+    font-size: 28px;
+    /* adjust size if needed */
+    font-weight: 700;
+    margin-bottom: 50px;
+    /* spacing between heading and grid */
+    color: #111827;
+    /* dark text for light mode */
+}
+
+body.dark section h2 {
+    color: #e2e8f0;
+    /* light text for dark mode */
+}

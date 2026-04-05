@@ -1,0 +1,28 @@
+.centers-state-map {
+  flex-shrink: 0;
+  width: min(240px, 44vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centers-state-map-frame {
+  background: linear-gradient(160deg, #f4c430 0%, #e8a317 45%, #c98f0f 100%);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(180, 130, 10, 0.35);
+  width: 100%;
+}
+
+.centers-state-map-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 120px;
+  max-height: 260px;
+  object-fit: contain;
+  /* tint; SVG maps stay visible */
+  filter: sepia(100%) saturate(380%) hue-rotate(348deg) brightness(0.9) contrast(1.2);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.4);
+}

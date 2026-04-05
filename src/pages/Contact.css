@@ -1,0 +1,238 @@
+.contact-page {
+  background: #fff;
+  padding-bottom: 0;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: clamp(40px, 8vw, 72px) 24px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 12px;
+}
+
+.contact-hero-sub {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-blue-accent);
+}
+
+.contact-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(28px, 4vw, 48px);
+  align-items: start;
+}
+
+.contact-aside-kicker {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--color-orange);
+}
+
+.contact-aside-title {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.5vw, 28px);
+  margin: 0 0 16px;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.contact-aside-text {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+.contact-social {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue-accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+.contact-social a:hover {
+  background-color: rgb(16, 16, 255);
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.contact-field input,
+.contact-field textarea {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid #d4d4d4;
+  background: #f3f3f3;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 1px;
+  border-color: #bbb;
+  background: #fff;
+}
+
+.contact-send {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 12px 36px;
+  background: var(--color-orange);
+  color: #fff;
+  border: none;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.contact-send:hover {
+  background: var(--color-orange-dark);
+}
+
+.contact-form-note {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.contact-cards {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.contact-card {
+  padding: 28px 22px;
+  color: #fff;
+  transform: skewY(-2deg);
+  border-radius: 2px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card > * {
+  transform: skewY(2deg);
+}
+
+.contact-card h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-card a {
+  color: #fff;
+}
+
+.contact-card--red {
+  background: var(--color-red-orange);
+}
+
+.contact-card--amber {
+  background: #e8a317;
+}
+
+.contact-card--teal {
+  background: var(--color-teal);
+}
+
+.contact-map-wrap {
+  width: 100%;
+  margin: 0;
+  background: #e5e5e5;
+}
+
+.contact-map {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 40vh, 420px);
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
+
+

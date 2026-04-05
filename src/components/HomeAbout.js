@@ -1,0 +1,33 @@
+import "./HomeAbout.css";
+
+const copy = `Shivmala Foundation works with rural communities in Maharashtra to expand access to
+quality education, digital skills, and sustainable livelihoods. Through LearnCraft Training Institute
+and grassroots partnerships, we support children, youth, and women with practical learning,
+health awareness, and community-led initiatives. Our programmes are designed for long-term impact:
+building confidence, employability, and civic participation where it matters most.`;
+
+function HomeAbout() {
+  return (
+    <section className="home-about" aria-labelledby="home-about-heading">
+      <div className="home-about-inner">
+        <div className="home-about-media">
+          <img
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+            alt="Student engaged in learning at a desk"
+            width={560}
+            height={700}
+            loading="lazy"
+          />
+        </div>
+        <div className="home-about-card">
+          <h2 id="home-about-heading" className="home-about-title">
+            Trusted NGO for rural development: Shivmala Foundation
+          </h2>
+          <p className="home-about-body">{copy}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default HomeAbout;

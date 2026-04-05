@@ -1,0 +1,48 @@
+.about-sub-page {
+  background: #fff;
+  padding-bottom: 56px;
+}
+
+.about-sub-hero {
+  text-align: center;
+  padding: clamp(40px, 7vw, 64px) 24px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-sub-heart {
+  display: block;
+  color: var(--color-orange);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.about-sub-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 4.5vw, 44px);
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--color-text);
+}
+
+.about-sub-tagline {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-blue-accent);
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
