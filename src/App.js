@@ -14,6 +14,8 @@ import PhotoGallery from "./pages/PhotoGallery";
 import VideoGallery from "./pages/VideoGallery";
 import Contact from "./pages/Contact";
 import Centers from "./pages/Centers";
+import CenterDetail from "./pages/CenterDetail";
+import Media from "./pages/Media";
 
 function App() {
   return (
@@ -34,8 +36,10 @@ function App() {
           <Route path="/gallery/photos/:page" element={<PhotoGallery />} />
           <Route path="/gallery/videos" element={<Navigate to="/gallery/videos/1" replace />} />
           <Route path="/gallery/videos/:page" element={<VideoGallery />} />
+          <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/centers" element={<Centers />} />
+          <Route path="/centers/:id" element={<CenterDetail />} />
         </Routes>
       </main>
 

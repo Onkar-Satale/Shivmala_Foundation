@@ -62,8 +62,6 @@ function Hero() {
             </Link>
           </div>
         </div>
-
-        <div className="hero-slant" aria-hidden="true" />
       </section>
     </div>
   );

@@ -41,14 +41,6 @@ function VideoGallery() {
                     allowFullScreen
                   />
                   <div className="video-gallery-actions">
-                    <a
-                      href={v.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="video-gallery-yt-btn"
-                    >
-                      YouTube
-                    </a>
                     <button
                       type="button"
                       className="video-gallery-collapse"
@@ -69,14 +61,6 @@ function VideoGallery() {
                     <span className="video-gallery-play" aria-hidden="true" />
                     <span className="video-gallery-thumb-title">{v.title}</span>
                   </button>
-                  <a
-                    href={v.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="video-gallery-yt-link"
-                  >
-                    YouTube
-                  </a>
                 </>
               )}
             </li>

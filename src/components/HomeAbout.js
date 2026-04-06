@@ -10,20 +10,22 @@ function HomeAbout() {
   return (
     <section className="home-about" aria-labelledby="home-about-heading">
       <div className="home-about-inner">
-        <div className="home-about-media">
-          <img
-            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
-            alt="Student engaged in learning at a desk"
-            width={560}
-            height={700}
-            loading="lazy"
-          />
-        </div>
-        <div className="home-about-card">
-          <h2 id="home-about-heading" className="home-about-title">
-            Trusted NGO for rural development: Shivmala Foundation
-          </h2>
-          <p className="home-about-body">{copy}</p>
+        <div className="home-about-wrapper">
+          <div className="home-about-media">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+              alt="Student engaged in learning at a desk"
+              width={560}
+              height={700}
+              loading="lazy"
+            />
+          </div>
+          <div className="home-about-card">
+            <h2 id="home-about-heading" className="home-about-title">
+              Best NGO for CSR in India<br />Shivmala Foundation
+            </h2>
+            <p className="home-about-body">{copy}</p>
+          </div>
         </div>
       </div>
     </section>

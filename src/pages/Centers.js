@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { centersRegions } from "../data/centersData";
 import CentersStateMap from "../components/CentersStateMap";
 import VolunteerPhotoCarousel from "../components/VolunteerPhotoCarousel";
+import CentersReviews from "../components/CentersReviews";
 import "./Centers.css";
 
 function Centers() {
@@ -158,6 +159,9 @@ function Centers() {
 
         <div className="centers-photo-marquee">
           <VolunteerPhotoCarousel />
+        </div>
+        <div className="centers-reviews-marquee">
+          <CentersReviews />
         </div>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import "./Contact.css";
 
 function Contact() {
@@ -30,11 +31,11 @@ function Contact() {
             or to visit our centre in Bardapur.
           </p>
           <div className="contact-social" aria-label="Social media">
-            <a href="https://www.facebook.com/profile.php?id=61581168451292&rdid=7vAf3DWzldTlg9bJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAozBTBKp%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">Li</a>
-            <a href="https://www.youtube.com/@shivmalafoundationngo" target="_blank" rel="noopener noreferrer" aria-label="Youtube">Y</a>
+            <a href="https://www.facebook.com/profile.php?id=61581168451292&rdid=7vAf3DWzldTlg9bJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAozBTBKp%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.youtube.com/@shivmalafoundationngo" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><FaYoutube /></a>
           </div>
         </section>
 

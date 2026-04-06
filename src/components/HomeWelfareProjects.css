@@ -1,0 +1,109 @@
+.welfare-projects-section {
+  padding: 80px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.welfare-projects-header {
+  margin-bottom: 40px;
+}
+
+.welfare-projects-header h2 {
+  font-family: var(--font-serif, serif);
+  font-size: 36px;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.welfare-projects-sub {
+  color: #eaa42c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.welfare-projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welfare-project-card {
+  background: #fff;
+  flex: 1;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.welfare-project-text p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.welfare-project-list {
+  display: flex;
+  gap: 20px;
+}
+
+.welfare-project-list-col {
+  flex: 1;
+}
+
+.welfare-project-badge {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.welfare-project-list-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.welfare-project-list-col li {
+  font-size: 12px;
+  color: #666;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  line-height: 1.4;
+}
+
+.welfare-project-list-col li:last-child {
+  border-bottom: none;
+}
+
+.welfare-project-btn {
+  display: inline-block;
+  background-color: #eaa42c;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+.welfare-project-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .welfare-projects-grid {
+    flex-direction: column;
+  }
+}

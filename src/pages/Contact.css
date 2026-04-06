@@ -174,7 +174,7 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
-.contact-card > * {
+.contact-card>* {
   transform: skewY(2deg);
 }
 
@@ -216,7 +216,8 @@
 .contact-map {
   display: block;
   width: 100%;
-  height: clamp(280px, 40vh, 420px);
+  height: clamp(350px, 50vh, 600px);
+  /* reduced from 500–800 */
   border: 0;
 }
 
@@ -234,5 +235,3 @@
     max-width: 420px;
   }
 }
-
-

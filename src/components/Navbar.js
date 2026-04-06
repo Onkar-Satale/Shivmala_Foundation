@@ -1,5 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { centersRegions } from "../data/centersData";
 import "./Navbar.css";
 
 const LOGO_SRC = `${process.env.PUBLIC_URL}/images/logo.png`;
@@ -148,7 +149,7 @@ function Navbar() {
             <li className="navbar-item-dropdown">
               <div className="navbar-dropdown-row">
                 <NavLink
-                  to="/gallery/photos/1"
+                  to="/media"
                   className={({ isActive }) =>
                     `navbar-link${galleryActive || isActive ? " is-active" : ""}`
                   }
@@ -201,17 +202,37 @@ function Navbar() {
               </a>
             </li>
 
-            <li>
-              <NavLink
-                to="/centers"
-                className={({ isActive }) =>
-                  `navbar-link${isActive ? " is-active" : ""}`
-                }
-                onClick={closeMenu}
+            <li className="navbar-item-dropdown">
+              <div className="navbar-dropdown-row">
+                <NavLink
+                  to="/centers"
+                  className={({ isActive }) =>
+                    `navbar-link${isActive ? " is-active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
+                  Centers
+                  <span className="navbar-caret">▾</span>
+                </NavLink>
+                <button
+                  type="button"
+                  className="navbar-mobile-subtoggle"
+                  aria-expanded={mobileSub === "centers"}
+                  aria-label="Centers submenu"
+                  onClick={() => toggleSub("centers")}
+                />
+              </div>
+              <ul
+                className={`navbar-dropdown${mobileSub === "centers" ? " is-open-mobile" : ""}`}
               >
-                Centers
-                <span className="navbar-caret">▾</span>
-              </NavLink>
+                {centersRegions.map((region) => (
+                  <li key={region.id}>
+                    <Link to={`/centers/${region.id}`} onClick={closeMenu}>
+                      {region.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
 
             <li>

@@ -1,0 +1,18 @@
+.media-combined-page {
+  background-color: #fff;
+}
+
+.media-divider {
+  border: 0;
+  height: 2px;
+  background: var(--color-orange, #eaa42c);
+  margin: 20px auto 40px;
+  max-width: 100px;
+  opacity: 0.5;
+}
+
+/* Specific overrides when embedded together */
+.media-combined-page .photo-gallery-page,
+.media-combined-page .video-gallery-page {
+  padding-bottom: 20px;
+}
