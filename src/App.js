@@ -16,6 +16,8 @@ import Contact from "./pages/Contact";
 import Centers from "./pages/Centers";
 import CenterDetail from "./pages/CenterDetail";
 import Media from "./pages/Media";
+import GetInvolvedPage from "./pages/GetInvolvedPage";
+import { getInvolvedData } from "./data/getInvolvedData";
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
           <Route path="/gallery/videos" element={<Navigate to="/gallery/videos/1" replace />} />
           <Route path="/gallery/videos/:page" element={<VideoGallery />} />
           <Route path="/media" element={<Media />} />
+          <Route path="/volunteer" element={<GetInvolvedPage data={getInvolvedData["volunteer"]} />} />
+          <Route path="/join-ngo" element={<GetInvolvedPage data={getInvolvedData["join-ngo"]} />} />
+          <Route path="/corporate" element={<GetInvolvedPage data={getInvolvedData["corporate"]} />} />
+          <Route path="/individual-member" element={<GetInvolvedPage data={getInvolvedData["individual-member"]} />} />
+          <Route path="/career" element={<GetInvolvedPage data={getInvolvedData["career"]} />} />
+          <Route path="/ngo-internship" element={<GetInvolvedPage data={getInvolvedData["ngo-internship"]} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/centers" element={<Centers />} />
           <Route path="/centers/:id" element={<CenterDetail />} />

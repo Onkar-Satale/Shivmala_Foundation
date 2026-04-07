@@ -182,17 +182,54 @@ function Navbar() {
               </ul>
             </li>
 
-            <li>
-              <NavLink
-                to="/impact"
-                className={({ isActive }) =>
-                  `navbar-link${isActive ? " is-active" : ""}`
-                }
-                onClick={closeMenu}
+            <li className="navbar-item-dropdown">
+              <div className="navbar-dropdown-row">
+                <span className="navbar-link" style={{ cursor: "default" }}>
+                  Get Involved
+                  <span className="navbar-caret">▾</span>
+                </span>
+                <button
+                  type="button"
+                  className="navbar-mobile-subtoggle"
+                  aria-expanded={mobileSub === "involved"}
+                  aria-label="Get Involved submenu"
+                  onClick={() => toggleSub("involved")}
+                />
+              </div>
+              <ul
+                className={`navbar-dropdown${mobileSub === "involved" ? " is-open-mobile" : ""}`}
               >
-                Get Involved
-                <span className="navbar-caret">▾</span>
-              </NavLink>
+                <li>
+                  <Link to="/volunteer" onClick={closeMenu}>
+                    Volunteer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/join-ngo" onClick={closeMenu}>
+                    Join NGO
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/corporate" onClick={closeMenu}>
+                    Corporate
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/individual-member" onClick={closeMenu}>
+                    Individual Member
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/career" onClick={closeMenu}>
+                    Career
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ngo-internship" onClick={closeMenu}>
+                    Ngo-Internship
+                  </Link>
+                </li>
+              </ul>
             </li>
 
             <li>
