@@ -147,7 +147,7 @@
 }
 
 .site-footer-bar {
-  background: #000;
+  background: #4b4b4b;
   border-top: 1px solid #333;
   padding: 14px 24px;
 }
@@ -161,7 +161,7 @@
   justify-content: space-between;
   gap: 12px;
   font-size: 13px;
-  color: #888;
+  color: #ffffff;
 }
 
 .site-footer-legal {
@@ -171,7 +171,7 @@
 }
 
 .site-footer-legal a {
-  color: #aaa;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -197,5 +197,6 @@
 
   .site-footer-legal {
     justify-content: center;
+    color: white;
   }
 }

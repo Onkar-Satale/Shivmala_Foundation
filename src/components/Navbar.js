@@ -36,8 +36,8 @@ function Navbar() {
                 src={LOGO_SRC}
                 alt="Shivmala Foundation"
                 className="navbar-logo-img"
-                width={52}
-                height={52}
+                width={80}
+                height={80}
               />
               <span className="navbar-logo-text">SHIVMALA FOUNDATION</span>
             </Link>
