@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from "react";
 import "./HomeAbout.css";
 
 const copy = `Shivmala Foundation works with rural communities in Maharashtra to expand access to
@@ -7,8 +8,38 @@ health awareness, and community-led initiatives. Our programmes are designed for
 building confidence, employability, and civic participation where it matters most.`;
 
 function HomeAbout() {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="home-about" aria-labelledby="home-about-heading">
+    <section 
+      className={`home-about ${isVisible ? "is-visible" : ""}`} 
+      aria-labelledby="home-about-heading"
+      ref={sectionRef}
+    >
       <div className="home-about-inner">
         <div className="home-about-wrapper">
           <div className="home-about-media">

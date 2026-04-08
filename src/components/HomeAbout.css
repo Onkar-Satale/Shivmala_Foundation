@@ -4,7 +4,7 @@
 }
 
 .home-about-inner {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -20,6 +20,14 @@
 .home-about-media {
   overflow: hidden;
   border-right: 1px solid #eaeaea;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: opacity 2.5s cubic-bezier(0.2, 0.8, 0.2, 1), transform 2.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-about.is-visible .home-about-media {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .home-about-media img {
@@ -30,15 +38,23 @@
 }
 
 .home-about-card {
-  padding: 40px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: opacity 2.5s cubic-bezier(0.2, 0.8, 0.2, 1), transform 2.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.home-about.is-visible .home-about-card {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .home-about-title {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   color: #eaa42c;
   margin: 0 0 20px;
@@ -48,7 +64,7 @@
 
 .home-about-body {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
   color: #666;
   text-align: justify;
   line-height: 1.8;

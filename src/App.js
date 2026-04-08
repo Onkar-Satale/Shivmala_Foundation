@@ -19,6 +19,10 @@ import Media from "./pages/Media";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import { getInvolvedData } from "./data/getInvolvedData";
 
+import Certificates from "./pages/Certificates";
+import Brochure from "./pages/Brochure";
+import ApplicationForms from "./pages/ApplicationForms";
+
 function App() {
   return (
     <Router>
@@ -48,6 +52,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/centers" element={<Centers />} />
           <Route path="/centers/:id" element={<CenterDetail />} />
+          <Route path="/download/certificates" element={<Certificates />} />
+          <Route path="/download/brochure" element={<Brochure />} />
+          <Route path="/download/application-forms" element={<ApplicationForms />} />
         </Routes>
       </main>
 

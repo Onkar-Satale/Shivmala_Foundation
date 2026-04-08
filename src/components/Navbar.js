@@ -232,11 +232,39 @@ function Navbar() {
               </ul>
             </li>
 
-            <li>
-              <a href="/#download" className="navbar-link" onClick={closeMenu}>
-                Download
-                <span className="navbar-caret">▾</span>
-              </a>
+            <li className="navbar-item-dropdown">
+              <div className="navbar-dropdown-row">
+                <span className="navbar-link" style={{ cursor: "default" }}>
+                  Download
+                  <span className="navbar-caret">▾</span>
+                </span>
+                <button
+                  type="button"
+                  className="navbar-mobile-subtoggle"
+                  aria-expanded={mobileSub === "download"}
+                  aria-label="Download submenu"
+                  onClick={() => toggleSub("download")}
+                />
+              </div>
+              <ul
+                className={`navbar-dropdown${mobileSub === "download" ? " is-open-mobile" : ""}`}
+              >
+                <li>
+                  <Link to="/download/certificates" onClick={closeMenu}>
+                    Certifications
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/download/brochure" onClick={closeMenu}>
+                    Brochure
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/download/application-forms" onClick={closeMenu}>
+                    Application Forms
+                  </Link>
+                </li>
+              </ul>
             </li>
 
             <li className="navbar-item-dropdown">

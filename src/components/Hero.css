@@ -19,13 +19,16 @@
   background-size: cover;
   background-position: center 35%;
   opacity: 0;
-  transition: opacity 0.85s ease;
+  transform: scale(1);
+  transition: opacity 0.85s ease, transform 0.85s ease;
   z-index: 0;
 }
 
 .hero-slide-bg.is-active {
   opacity: 1;
   z-index: 1;
+  transform: scale(1.05);
+  transition: opacity 0.85s ease, transform 6s ease-out;
 }
 
 .hero-banner-overlay {
