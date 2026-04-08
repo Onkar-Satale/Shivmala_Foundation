@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -22,11 +22,15 @@ import { getInvolvedData } from "./data/getInvolvedData";
 import Certificates from "./pages/Certificates";
 import Brochure from "./pages/Brochure";
 import ApplicationForms from "./pages/ApplicationForms";
+import Donate from "./pages/Donate";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isDonatePage = location.pathname === "/donate";
+
   return (
-    <Router>
-      <Navbar />
+    <>
+      {!isDonatePage && <Navbar />}
 
       <main className="app-main">
         <Routes>
@@ -55,10 +59,19 @@ function App() {
           <Route path="/download/certificates" element={<Certificates />} />
           <Route path="/download/brochure" element={<Brochure />} />
           <Route path="/download/application-forms" element={<ApplicationForms />} />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
       </main>
 
-      <Footer />
+      {!isDonatePage && <Footer />}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

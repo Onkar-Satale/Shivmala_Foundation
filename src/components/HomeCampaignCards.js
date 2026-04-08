@@ -120,7 +120,7 @@ function HomeCampaignCards() {
                       Goal: <span>{c.goal}</span>
                     </div>
                   </div>
-                  <Link to="/contact" className="home-campaign-btn">
+                  <Link to="/donate" className="home-campaign-btn">
                     Donate Now
                   </Link>
                 </div>

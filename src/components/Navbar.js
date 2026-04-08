@@ -312,7 +312,7 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <Link to="/contact" className="navbar-donate" onClick={closeMenu}>
+          <Link to="/donate" className="navbar-donate" onClick={closeMenu}>
             Donate Now
           </Link>
         </nav>
