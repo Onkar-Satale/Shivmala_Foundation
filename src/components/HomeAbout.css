@@ -83,4 +83,12 @@
   .home-about-media img {
     max-height: 360px;
   }
+
+  .home-about-card {
+    padding: 40px 24px;
+  }
+
+  .home-about-body {
+    text-align: left;
+  }
 }

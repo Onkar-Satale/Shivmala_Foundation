@@ -233,5 +233,20 @@
   .contact-cards {
     grid-template-columns: 1fr;
     max-width: 420px;
+    padding: 0 16px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-layout {
+    padding: 16px 16px 32px;
+  }
+  
+  .contact-card {
+    padding: 24px 16px;
+  }
+  
+  .contact-hero {
+    padding: clamp(32px, 6vw, 40px) 16px 24px;
   }
 }

@@ -617,12 +617,13 @@
 
 @media (max-width: 480px) {
   .navbar-contact-panel {
-    font-size: 10px;
-    gap: 4px;
-    padding: 3px 8px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    font-size: 11px;
+    gap: 6px;
+    padding: 6px 8px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .navbar-contact-panel a {
