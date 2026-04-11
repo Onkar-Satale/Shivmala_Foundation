@@ -8,22 +8,38 @@ const LOGO_SRC = `${process.env.PUBLIC_URL}/images/logo.png`;
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileSub, setMobileSub] = useState(null);
+  const [mobileSubItem, setMobileSubItem] = useState(null);
+  const [forceHide, setForceHide] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setMenuOpen(false);
     setMobileSub(null);
+    setMobileSubItem(null);
+    
+    // Briefly force dropdowns to hide so the :hover state doesn't persist
+    setForceHide(true);
+    const timer = setTimeout(() => setForceHide(false), 150);
+    return () => clearTimeout(timer);
   }, [location.pathname, location.hash]);
 
   const closeMenu = () => {
     setMenuOpen(false);
     setMobileSub(null);
+    setMobileSubItem(null);
   };
 
   const galleryActive = location.pathname.startsWith("/gallery");
 
   const toggleSub = (key) => {
     setMobileSub((s) => (s === key ? null : key));
+    setMobileSubItem(null); // reset inner nav on main toggle
+  };
+
+  const toggleSubItem = (key, e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setMobileSubItem((s) => (s === key ? null : key));
   };
 
   return (
@@ -72,7 +88,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className={`navbar-nav-shell ${menuOpen ? "is-open" : ""}`}>
+      <div className={`navbar-nav-shell ${menuOpen ? "is-open" : ""} ${forceHide ? "force-hide" : ""}`}>
         <nav
           id="primary-navigation"
           className="navbar-nav"
@@ -133,17 +149,91 @@ function Navbar() {
               </ul>
             </li>
 
-            <li>
-              <NavLink
-                to="/initiatives"
-                className={({ isActive }) =>
-                  `navbar-link${isActive ? " is-active" : ""}`
-                }
-                onClick={closeMenu}
+            <li className="navbar-item-dropdown">
+              <div className="navbar-dropdown-row">
+                <span className="navbar-link" style={{ cursor: "default" }}>
+                  Projects
+                  <span className="navbar-caret">▾</span>
+                </span>
+                <button
+                  type="button"
+                  className="navbar-mobile-subtoggle"
+                  aria-expanded={mobileSub === "projects"}
+                  aria-label="Projects submenu"
+                  onClick={() => toggleSub("projects")}
+                />
+              </div>
+              <ul
+                className={`navbar-dropdown${mobileSub === "projects" ? " is-open-mobile" : ""}`}
               >
-                Projects
-                <span className="navbar-caret">▾</span>
-              </NavLink>
+                {/* CSR Projects */}
+                <li className="navbar-subitem-dropdown">
+                  <div className="navbar-subdropdown-row">
+                    <span className="navbar-sublink" style={{ cursor: "default" }}>
+                      CSR Projects
+                      <span className="navbar-subcaret">▸</span>
+                      <button
+                        type="button"
+                        className="navbar-mobile-subitemtoggle"
+                        aria-expanded={mobileSubItem === "csr"}
+                        aria-label="CSR Projects submenu"
+                        onClick={(e) => toggleSubItem("csr", e)}
+                      >▾</button>
+                    </span>
+                  </div>
+                  <ul className={`navbar-subdropdown${mobileSubItem === "csr" ? " is-open-mobile" : ""}`}>
+                    <li><Link to="/projects/csr/blood-donation" onClick={closeMenu}>Blood Donation</Link></li>
+                    <li><Link to="/projects/csr/free-medicine" onClick={closeMenu}>Free Medicine</Link></li>
+                    <li><Link to="/projects/csr/tree-plantation" onClick={closeMenu}>Tree Plantation</Link></li>
+                    <li><Link to="/projects/csr/tuition-underprivileged" onClick={closeMenu}>Tuition for Underprivileged</Link></li>
+                  </ul>
+                </li>
+
+                {/* Government Projects */}
+                <li className="navbar-subitem-dropdown">
+                  <div className="navbar-subdropdown-row">
+                    <span className="navbar-sublink" style={{ cursor: "default" }}>
+                      Government Projects
+                      <span className="navbar-subcaret">▸</span>
+                      <button
+                        type="button"
+                        className="navbar-mobile-subitemtoggle"
+                        aria-expanded={mobileSubItem === "gov"}
+                        aria-label="Government Projects submenu"
+                        onClick={(e) => toggleSubItem("gov", e)}
+                      >▾</button>
+                    </span>
+                  </div>
+                  <ul className={`navbar-subdropdown${mobileSubItem === "gov" ? " is-open-mobile" : ""}`}>
+                    <li><Link to="/projects/government/ministry-of-minority-affairs" onClick={closeMenu}>Ministry of Minority Affairs</Link></li>
+                    <li><Link to="/projects/government/ministry-of-social-justice" onClick={closeMenu}>Ministry of Social Justice</Link></li>
+                    <li><Link to="/projects/government/ministry-of-culture" onClick={closeMenu}>Ministry of Culture</Link></li>
+                    <li><Link to="/projects/government/ministry-of-rural-development" onClick={closeMenu}>Ministry of Rural Dev</Link></li>
+                  </ul>
+                </li>
+
+                {/* Shivmala Foundation */}
+                <li className="navbar-subitem-dropdown">
+                  <div className="navbar-subdropdown-row">
+                    <span className="navbar-sublink" style={{ cursor: "default" }}>
+                      Shivmala Foundation
+                      <span className="navbar-subcaret">▸</span>
+                      <button
+                        type="button"
+                        className="navbar-mobile-subitemtoggle"
+                        aria-expanded={mobileSubItem === "sf"}
+                        aria-label="Shivmala Foundation submenu"
+                        onClick={(e) => toggleSubItem("sf", e)}
+                      >▾</button>
+                    </span>
+                  </div>
+                  <ul className={`navbar-subdropdown${mobileSubItem === "sf" ? " is-open-mobile" : ""}`}>
+                    <li><Link to="/projects/shivmala-foundation/community-rehabilitation" onClick={closeMenu}>Community Rehabilitation</Link></li>
+                    <li><Link to="/projects/shivmala-foundation/job-placement" onClick={closeMenu}>Job Placement</Link></li>
+                    <li><Link to="/projects/shivmala-foundation/vocational-training" onClick={closeMenu}>Vocational Training</Link></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
 
             <li className="navbar-item-dropdown">

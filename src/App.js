@@ -23,6 +23,7 @@ import Certificates from "./pages/Certificates";
 import Brochure from "./pages/Brochure";
 import ApplicationForms from "./pages/ApplicationForms";
 import Donate from "./pages/Donate";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function AppContent() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function AppContent() {
           <Route path="/about/vision" element={<AboutVision />} />
           <Route path="/about/mission" element={<AboutMission />} />
           <Route path="/initiatives" element={<Initiatives />} />
+          <Route path="/projects/:category/:projectId" element={<ProjectDetail />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/gallery" element={<Navigate to="/gallery/photos/1" replace />} />
           <Route path="/gallery/photos" element={<Navigate to="/gallery/photos/1" replace />} />
