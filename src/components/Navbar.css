@@ -356,7 +356,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
-  padding: 14px 28px;
+  padding: 7px 21px; /* control size here */
   border-radius: 2px;
   white-space: nowrap;
   transition: background 0.2s;

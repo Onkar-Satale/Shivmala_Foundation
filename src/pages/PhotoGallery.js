@@ -1,12 +1,20 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { photoCategories } from "../data/mediaData";
 import Lightbox from "../components/Lightbox";
 import "./PhotoGallery.css";
 
 function PhotoGallery() {
+  const location = useLocation();
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  useEffect(() => {
+    if (location.state?.category) {
+      setActiveCategory(location.state.category);
+    }
+  }, [location.state]);
 
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat);

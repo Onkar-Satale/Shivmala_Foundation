@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import BoardMembersSection from "../components/BoardMembersSection";
+import SEO from "../components/SEO";
 import "./About.css";
 
 function About() {
   return (
     <div className="about-page">
+      <SEO 
+        title="About Shivmala Foundation | Rural Development Bardapur Maharashtra"
+        description="Shivmala Foundation - Pravin More यांच्या नेतृत्वात AI training, healthcare, skill development. Bardapur social revolution!"
+      />
       <header className="about-hero">
-        <h1 className="about-hero-title">About Us</h1>
+        <h1 className="about-hero-title">Shivmala Foundation बद्दल जाणून घ्या</h1>
         <p className="about-hero-sub">
           Trusted NGO for rural development and CSR partnerships: Shivmala Foundation
         </p>
@@ -101,17 +106,13 @@ function About() {
             <span className="about-discover-heart" aria-hidden="true">
               ♥
             </span>
-            <h2 id="discover-heading">Discover about us</h2>
+            <h2 id="discover-heading">Shivmala Foundation - Social Revolution</h2>
             <p>
-              Shivmala Foundation grew from a simple idea: rural Maharashtra deserves the same access to
-              technology, education, and opportunity as anywhere else. With LearnCraft Training Institute,
-              we run hands-on programmes in digital literacy, robotics awareness, and skills that help young
-              people stay and thrive in their villages.
+              Shivmala Foundation is not just an organization; it’s a revolution! With LearnCraft Training Institute, we bring AI & Robotics to rural Bardapur, empowering farmers, women, and youth.
             </p>
+            <h2 style={{ marginTop: '1.5rem', fontSize: '1.5rem' }}>Shivmala Foundation Vision</h2>
             <p>
-              We collaborate with schools, local leaders, and CSR partners to keep programmes practical,
-              transparent, and accountable. Our vision is a more prosperous, equitable countryside—built
-              one learner, one community, at a time.
+              Transform rural Maharashtra through technology in education, agriculture, and healthcare.
             </p>
             <p className="about-discover-links">
               <Link to="/about/vision">Vision</Link>

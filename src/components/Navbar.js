@@ -117,7 +117,7 @@ function Navbar() {
                   }
                   onClick={closeMenu}
                 >
-                  About Us
+                  About
                   <span className="navbar-caret">▾</span>
                 </NavLink>
                 <button
@@ -131,6 +131,16 @@ function Navbar() {
               <ul
                 className={`navbar-dropdown${mobileSub === "about" ? " is-open-mobile" : ""}`}
               >
+                <li>
+                  <Link to="/initiatives" onClick={closeMenu}>
+                    Initiatives
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/impact" onClick={closeMenu}>
+                    Impact
+                  </Link>
+                </li>
                 <li>
                   <Link to="/about/members" onClick={closeMenu}>
                     Members
@@ -403,7 +413,7 @@ function Navbar() {
             </li>
           </ul>
           <Link to="/donate" className="navbar-donate" onClick={closeMenu}>
-            Donate Now
+            Donate
           </Link>
         </nav>
       </div>

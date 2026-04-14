@@ -4,52 +4,36 @@ import "./HomeCampaignCards.css";
 
 const campaigns = [
   {
-    title: "Health Programmes",
-    goal: "₹5,00,000.00",
-    raised: "₹1,25,000.00",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-    badge: "Health",
-    percentage: "25%"
-  },
-  {
-    title: "Donate To Poor Children",
-    goal: "₹8,00,000.00",
-    raised: "₹2,40,000.00",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773f?auto=format&fit=crop&w=800&q=80",
-    badge: "Education",
-    percentage: "30%"
-  },
-  {
-    title: "Support Coronavirus Relief",
-    goal: "₹6,50,000.00",
-    raised: "₹90,000.00",
-    image: "https://images.unsplash.com/photo-1584483766114-2cea6facdf57?auto=format&fit=crop&w=800&q=80",
-    badge: "Relief",
-    percentage: "14%"
-  },
-  {
     title: "Women Empowerment",
-    goal: "₹4,00,000.00",
-    raised: "₹2,00,000.00",
+    goal: "₹45,00,000",
+    raised: "₹3,12,800",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
     badge: "Empowerment",
-    percentage: "50%"
+    percentage: "7%"
   },
   {
-    title: "Rural Livelihoods",
-    goal: "₹7,50,000.00",
-    raised: "₹3,75,000.00",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
-    badge: "Livelihood",
-    percentage: "50%"
+    title: "Environment & Rural Development",
+    goal: "₹28,00,000",
+    raised: "₹1,56,000",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    badge: "Environment",
+    percentage: "5.6%"
   },
   {
     title: "Digital Skills Training",
-    goal: "₹2,50,000.00",
-    raised: "₹1,50,000.00",
+    goal: "₹10,50,000",
+    raised: "₹2,50,000",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
     badge: "Education",
-    percentage: "60%"
+    percentage: "24%"
+  },
+  {
+    title: "Child Literacy & Support",
+    goal: "₹8,00,000",
+    raised: "₹2,40,000",
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773f?auto=format&fit=crop&w=800&q=80",
+    badge: "Literacy",
+    percentage: "30%"
   }
 ];
 
@@ -67,7 +51,7 @@ function HomeCampaignCards() {
     const timer = setInterval(() => {
       setIsTransitioning(true);
       setCurrentIndex((prev) => prev + 1);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [isHovered]);
@@ -121,7 +105,7 @@ function HomeCampaignCards() {
                     </div>
                   </div>
                   <Link to="/donate" className="home-campaign-btn">
-                    Donate Now
+                    Read More
                   </Link>
                 </div>
               </li>

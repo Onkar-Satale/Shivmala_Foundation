@@ -49,14 +49,12 @@ function Footer() {
           </div>
 
           <div className="site-footer-col">
-            <h3 className="site-footer-heading">Get involved</h3>
+            <h3 className="site-footer-heading">Shivmala Foundation Quick Links</h3>
             <ul className="site-footer-links">
-              <li><Link to="/volunteer">Volunteer</Link></li>
-              <li><Link to="/join-ngo">Join as member</Link></li>
-              <li><Link to="/corporate">Corporate CSR</Link></li>
-              <li><Link to="/individual-member">Individual support</Link></li>
-              <li><Link to="/career">Careers</Link></li>
-              <li><Link to="/ngo-internship">Internship</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About Shivmala Foundation</Link></li>
+              <li><Link to="/initiatives">Initiatives</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
@@ -84,12 +82,11 @@ function Footer() {
 
       <div className="site-footer-bar" id="download">
         <div className="site-footer-bar-inner">
-          <p>© {new Date().getFullYear()} Shivmala Foundation. All rights reserved.</p>
+          <p>©️ 2026 Shivmala Foundation. All Rights Reserved.</p>
+          <p style={{fontStyle: 'italic', margin: '0 1rem'}}>Dedicated to Rural Maharashtra Digital Empowerment</p>
           <nav className="site-footer-legal" aria-label="Legal">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms &amp; Conditions</a>
-            <a href="#refund">Refund Policy</a>
-            <Link to="/contact">Sitemap</Link>
           </nav>
         </div>
       </div>

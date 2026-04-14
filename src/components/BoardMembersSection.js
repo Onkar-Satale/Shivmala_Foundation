@@ -9,7 +9,7 @@ function BoardMembersSection({ id }) {
       </span>
       <p className="board-kicker">MEET</p>
       <h2 id="board-heading" className="board-title">
-        Our board members
+        Shivmala Foundation Leadership
       </h2>
       <ul className="board-grid">
         {boardMembers.map((m) => (

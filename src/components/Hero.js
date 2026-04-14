@@ -30,9 +30,10 @@ function Hero() {
           <div
             key={i}
             className={`hero-slide-bg${i === index ? " is-active" : ""}`}
-            style={{ backgroundImage: `url(${s.image})` }}
             aria-hidden={i !== index}
-          />
+          >
+            <div style={{ backgroundImage: `url(${s.image})`, width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          </div>
         ))}
         <div className="hero-banner-overlay" />
 
@@ -40,11 +41,19 @@ function Hero() {
 
         <div className="hero-banner-inner">
           <div key={slide.kicker + slide.headline} className="hero-text-block">
-            <p className="hero-kicker">{slide.kicker}</p>
-            <h1 className="hero-title">{slide.headline}</h1>
-            <Link to={slide.ctaTo} className="hero-cta">
-              {slide.cta}
-            </Link>
+            <h1 className="hero-kicker" style={{fontSize: '1em', marginBottom: '1rem', textTransform: 'uppercase'}}>{slide.kicker}</h1>
+            <h2 className="hero-title">{slide.headline}</h2>
+            {slide.subheadline && <p className="hero-subheadline" style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '2rem' }}>{slide.subheadline}</p>}
+            <div className="hero-buttons">
+              <Link to={slide.ctaTo} className="hero-cta">
+                {slide.cta}
+              </Link>
+              {slide.cta2 && (
+                <Link to={slide.ctaTo2} className="hero-cta hero-cta-secondary" style={{ marginLeft: '1rem', backgroundColor: 'transparent', border: '2px solid #fff' }}>
+                  {slide.cta2}
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </section>

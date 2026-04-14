@@ -1,25 +1,26 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import "./Impact.css";
 
 const stories = [
   {
-    title: "Digital knowledge competitions",
+    title: "🏆 Shivmala Foundation Digital Knowledge Test (Season 1 & 2)",
     body:
-      "Students from rural areas take part in digital knowledge tests and creative challenges. Prizes have included laptops, tablets, bicycles, and scooters — celebrating effort and curiosity.",
+      "Prizes: E-scooters, Laptops, Bicycles, Tablets for rural talent.",
     extra:
       "Events are hosted with schools and local leaders so families see learning as a community priority.",
   },
   {
-    title: "Disaster relief & school support",
+    title: "🤝 Shivmala Foundation Disaster Relief",
     body:
-      "During the 2025 floods in Chhatrapati Sambhajinagar, Shivmala Foundation mobilised aid for schools and families — essentials, coordination with authorities, and follow-up where we could help longest.",
+      "October 2025 flood aid to Chhatrapati Sambhajinagar ZP schools.",
     extra:
       "We document needs transparently and align with district relief protocols.",
   },
   {
-    title: "Awareness tours in villages",
+    title: "🎤 Shivmala Foundation Awareness Tours",
     body:
-      "Digital literacy and safe-internet awareness programmes in Talegaon, Limbgaon, Hatola, and nearby villages — short talks, demos, and Q&A with youth and parents.",
+      "Talegaon, Limbgaon, Hatola digital revolution programs.",
     extra:
       "Volunteers and staff travel with portable kits so sessions work even with limited connectivity.",
   },
@@ -35,8 +36,12 @@ const stories = [
 function Impact() {
   return (
     <div className="impact-page">
+      <SEO 
+        title="Shivmala Foundation Impact | Digital Knowledge Test Winners Bardapur"
+        description="Shivmala Foundation success stories - Digital Knowledge Test prizes, Flood Relief 2025, mega events in Bardapur."
+      />
       <header className="impact-hero">
-        <h1 className="impact-hero-title">Get involved &amp; impact</h1>
+        <h1 className="impact-hero-title">Shivmala Foundation चा प्रभाव & Mega Events</h1>
         <p className="impact-hero-sub">
           Events, outreach, and community moments from Shivmala Foundation — powered by donors, partners, and
           volunteers across Maharashtra.

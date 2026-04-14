@@ -32,8 +32,8 @@
 
 .donation-bar-inner {
   display: grid;
-  grid-template-columns: minmax(140px, 220px) 1fr;
-  min-height: 104px;
+  grid-template-columns: minmax(180px, 300px) 1fr;
+  min-height: 150px;
 }
 
 .donation-bar-label {
@@ -41,12 +41,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 14px;
+  padding: 24px 20px;
 }
 
 .donation-bar-label-text {
   font-family: var(--font-serif);
-  font-size: clamp(15px, 2.8vw, 21px);
+  font-size: clamp(20px, 3.5vw, 28px);
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -57,11 +57,11 @@
 .donation-bar-track {
   background: var(--color-red-orange);
   color: #fff;
-  padding: 16px 18px 14px;
+  padding: 24px 26px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   min-width: 0;
 }
 
@@ -75,13 +75,13 @@
 
 .donation-bar-raised {
   font-family: var(--font-sans);
-  font-size: clamp(16px, 4.2vw, 26px);
+  font-size: clamp(22px, 5vw, 38px);
   font-weight: 700;
   word-break: break-word;
 }
 
 .donation-bar-pct {
-  font-size: clamp(14px, 3.5vw, 16px);
+  font-size: clamp(16px, 4vw, 22px);
   font-weight: 700;
   opacity: 0.95;
   flex-shrink: 0;
@@ -103,7 +103,7 @@
 
 .donation-bar-goal {
   margin: 0;
-  font-size: clamp(12px, 3.2vw, 13px);
+  font-size: clamp(15px, 3.5vw, 18px);
   line-height: 1.45;
   opacity: 0.95;
   word-break: break-word;
@@ -112,6 +112,7 @@
 .donation-bar-more {
   color: #fff;
   font-weight: 700;
+  font-size: 16px;
   text-decoration: underline;
 }
 

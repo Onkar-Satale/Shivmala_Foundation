@@ -5,7 +5,7 @@
 
 .hero-banner {
   position: relative;
-  min-height: clamp(420px, 72vh, 640px);
+  min-height: clamp(550px, 85vh, 800px);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -96,11 +96,11 @@
 @keyframes heroTextIn {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateX(60px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -121,6 +121,7 @@
   margin: 0 0 24px;
   padding: 20px 22px;
   background: rgba(90, 90, 90, 0.45);
+  border-radius: 12px;
   color: #fff;
   font-family: var(--font-serif);
   font-size: clamp(28px, 4.2vw, 46px);

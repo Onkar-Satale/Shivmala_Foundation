@@ -29,11 +29,12 @@ function HomeStatsBar() {
   return (
     <section className="home-stats" aria-label="Impact at a glance">
       <div className="home-stats-inner">
+        <h2 style={{ textAlign: 'center', color: '#fff', marginBottom: '2rem', fontSize: '2rem' }}>Shivmala Foundation चा Impact - Live Numbers</h2>
         <ul className="home-stats-grid">
-          <StatItem target={265} icon={FaUsers} label="Centers" suffix="+" />
-          <StatItem target={28} icon={FaUser} label="Members" />
-          <StatItem target={37} icon={FaUserFriends} label="Volunteers" />
-          <StatItem target={100} icon={FaHandsHelping} label="Donors" suffix="+" />
+          <StatItem target={1000} icon={FaUsers} label="Citizens - Shivmala Foundation Digital Literacy Mission 2026" suffix="+" />
+          <StatItem target={10000} icon={FaHandsHelping} label="Trees - Shivmala Foundation Environment Drive" suffix="+" />
+          <StatItem target={50} icon={FaUser} label="Schools - Shivmala Foundation Digital Board Installation" suffix="+" />
+          <StatItem target={1200} icon={FaUserFriends} label="Students - Shivmala Foundation Knowledge Test" suffix="+" />
         </ul>
       </div>
     </section>

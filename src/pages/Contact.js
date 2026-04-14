@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../components/SEO";
 import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import "./Contact.css";
 
@@ -12,8 +13,12 @@ function Contact() {
 
   return (
     <div className="contact-page">
+      <SEO 
+        title="Contact Shivmala Foundation | Bardapur Office Phone Email"
+        description="Shivmala Foundation Bardapur contact details - Phone 9552406336, office address, donate/volunteer. Join us!"
+      />
       <header className="contact-hero">
-        <h1 className="contact-hero-title">Contact Us</h1>
+        <h1 className="contact-hero-title">Shivmala Foundation शी संपर्क साधा</h1>
         <p className="contact-hero-sub">
           Rural empowerment through education &amp; technology — Shivmala Foundation
         </p>
@@ -23,8 +28,11 @@ function Contact() {
         <section className="contact-aside" aria-labelledby="contact-aside-heading">
           <p className="contact-aside-kicker">WRITE A MESSAGE</p>
           <h2 id="contact-aside-heading" className="contact-aside-title">
-            Get in touch with us
+            Support Shivmala Foundation
           </h2>
+          <p className="contact-aside-text" style={{ fontWeight: 'bold' }}>
+            Donate | Volunteer | CSR Partnership | Sponsor Mission 2026
+          </p>
           <p className="contact-aside-text">
             We work with communities in Maharashtra to expand learning opportunities, digital literacy,
             and grassroots programmes. Reach out for partnerships, volunteering, CSR collaborations,
@@ -83,6 +91,8 @@ function Contact() {
             <a href="tel:+919552406336">+91 9552406336</a>
             <br />
             <a href="tel:+918999021576">+91 8999021576</a>
+            <br />
+            <a href="tel:+918421217140">+91 8421217140</a>
           </p>
         </div>
         <div className="contact-card contact-card--teal">

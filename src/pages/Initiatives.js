@@ -1,39 +1,40 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import "./Initiatives.css";
 
 const initiatives = [
   {
-    title: "Mission 2026 — Digital literacy",
+    title: "🎓 Shivmala Foundation Mission 2026 - Free Digital Literacy",
     body:
-      "Computer basics, online safety, and practical digital skills for students and farmers in Bardapur and nearby villages. Sessions run at LearnCraft Training Institute and partner schools.",
+      "Computer Basics, Cyber Security, AI training for Bardapur students & farmers. Sessions run at LearnCraft Training Institute and partner schools.",
     extra:
       "Includes certificates, follow-up practice groups, and referral to advanced modules when learners are ready.",
   },
   {
-    title: "Digital summer camps",
+    title: "🚀 Shivmala Foundation Digital Summer Camp & Agri-Tech",
     body:
-      "Hands-on robotics, app ideas, and drone awareness workshops for rural students during school breaks — teamwork, creativity, and confidence in technology.",
+      "Robotics, App Development, Drone Technology workshops for rural students during school breaks — teamwork, creativity, and confidence in technology.",
     extra:
       "Camps are designed for mixed-age groups with mentors from the foundation and visiting volunteers.",
   },
   {
-    title: "Rural school adoption",
+    title: "🏫 Shivmala Foundation Rural School Adoption",
     body:
-      "Digital tools, smart boards where feasible, and teacher support for Zilla Parishad schools in Ambajogai and surrounding villages.",
+      "Digital tools & boards for Ambajogai, Parli Zilla Parishad schools.",
     extra:
       "We coordinate with head teachers and parent committees so equipment is used and maintained long term.",
   },
   {
-    title: "Healthcare camps",
+    title: "🩺 Shivmala Foundation Healthcare Camps",
     body:
-      "Free health check-ups, dental and eye screening, blood donation drives, and referrals — often run with district health partners and local volunteers.",
+      "Free full-body checkups, dental/eye clinics, blood donation drives.",
     extra:
       "Focus on prevention, women’s health, and senior care awareness in communities we serve.",
   },
   {
-    title: "Skills & livelihoods",
+    title: "💼 Shivmala Foundation Skill Development",
     body:
-      "Short courses in tailoring, beauty services, mobile repair, and related trades for youth and women, linked to local demand and micro-enterprise guidance.",
+      "Sewing, beauty parlor, mobile/hardware repairing training.",
     extra:
       "Alumni can join refresher sessions and connect with CSR-supported toolkits where available.",
   },
@@ -42,8 +43,12 @@ const initiatives = [
 function Initiatives() {
   return (
     <div className="initiatives-page">
+      <SEO 
+        title="Shivmala Foundation Initiatives | Free AI Training & Medical Camps Bardapur"
+        description="Shivmala Foundation Mission 2026, Digital Summer Camp, Healthcare Camps, Skill Training. FREE programs in Bardapur & Ambajogai!"
+      />
       <header className="initiatives-hero">
-        <h1 className="initiatives-hero-title">Our projects</h1>
+        <h1 className="initiatives-hero-title">Shivmala Foundation ची प्रमुख Initiatives</h1>
         <p className="initiatives-hero-sub">
           Shivmala Foundation programmes in education, technology, health, and livelihoods — designed with rural
           communities in Maharashtra and partner regions.

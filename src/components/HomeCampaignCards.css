@@ -55,7 +55,7 @@
   flex-direction: column;
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: left;
-  /* Exactly one third of the *viewport container* minus the gaps */
+/* Exactly one third of the *viewport container* minus the gaps */
   width: calc((100% - 60px) / 3);
   flex-shrink: 0;
   /* Set min-height instead of fixed height so text doesn't overflow if it gets too long */

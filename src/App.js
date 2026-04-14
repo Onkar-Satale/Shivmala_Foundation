@@ -25,6 +25,7 @@ import Brochure from "./pages/Brochure";
 import ApplicationForms from "./pages/ApplicationForms";
 import Donate from "./pages/Donate";
 import ProjectDetail from "./pages/ProjectDetail";
+import PillarPage from "./pages/PillarPage";
 
 function AppContent() {
   const location = useLocation();
@@ -47,6 +48,7 @@ function AppContent() {
           <Route path="/about/vision" element={<AboutVision />} />
           <Route path="/about/mission" element={<AboutMission />} />
           <Route path="/initiatives" element={<Initiatives />} />
+          <Route path="/pillars/:id" element={<PillarPage />} />
           <Route path="/projects/:category/:projectId" element={<ProjectDetail />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/gallery" element={<Navigate to="/gallery/photos/1" replace />} />
