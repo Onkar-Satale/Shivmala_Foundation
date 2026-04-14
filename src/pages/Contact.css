@@ -109,6 +109,7 @@
 
 .contact-field input,
 .contact-field textarea {
+  box-sizing: border-box;
   font-family: var(--font-sans);
   font-size: 15px;
   padding: 12px 14px;
@@ -221,7 +222,7 @@
   border: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .contact-layout {
     grid-template-columns: 1fr;
   }

@@ -95,24 +95,7 @@ function DonationBar() {
         </div>
       </div>
 
-      <div className="donation-carousel-controls">
-        <button
-          type="button"
-          className="donation-carousel-arrow"
-          aria-label="Previous campaign"
-          onClick={() => go(-1)}
-        >
-          ‹
-        </button>
-        <button
-          type="button"
-          className="donation-carousel-arrow"
-          aria-label="Next campaign"
-          onClick={() => go(1)}
-        >
-          ›
-        </button>
-      </div>
+
     </div>
   );
 }

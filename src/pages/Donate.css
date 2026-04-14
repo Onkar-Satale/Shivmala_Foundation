@@ -171,7 +171,7 @@
   background: #008f68;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .donate-card {
     flex-direction: column;
   }

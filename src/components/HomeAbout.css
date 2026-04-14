@@ -70,7 +70,7 @@
   line-height: 1.8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .home-about-wrapper {
     grid-template-columns: 1fr;
   }

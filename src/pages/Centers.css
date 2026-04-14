@@ -302,7 +302,7 @@
   filter: brightness(0.98);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .centers-region-body {
     flex-direction: column;
   }

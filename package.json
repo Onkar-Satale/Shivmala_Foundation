@@ -15,6 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prestart": "npm run generate-media",
+    "prebuild": "npm run generate-media",
+    "generate-media": "node scripts/generateMedia.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

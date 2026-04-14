@@ -27,7 +27,7 @@ function Footer() {
             </p>
             <div className="site-footer-social" aria-label="Social links">
               <a href="https://www.facebook.com/profile.php?id=61581168451292&rdid=7vAf3DWzldTlg9bJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAozBTBKp%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter /></a>
+              <a href="https://x.com/ShivmalaF" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter /></a>
               <a href="https://www.instagram.com/shivmalafoundationngo?igsh=ODJkMGIyaWVlZDd0" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
               <a href="https://www.youtube.com/@shivmalafoundationngo" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><FaYoutube /></a>
@@ -40,22 +40,23 @@ function Footer() {
               <li>
                 <Link to="/centers">All centers</Link>
               </li>
-              <li>Bardapur (head office)</li>
-              <li>Jalna district programmes</li>
-              <li>Mobile learning camps</li>
-              <li>Partner schools — Maharashtra</li>
-              <li>Online learner network</li>
+              <li><Link to="/centers/maharashtra">Maharashtra (Head Office)</Link></li>
+              <li><Link to="/centers/bihar">Bihar</Link></li>
+              <li><Link to="/centers/delhi">Delhi</Link></li>
+              <li><Link to="/centers/jharkhand">Jharkhand</Link></li>
+              <li><Link to="/centers/uttarpradesh">Uttar Pradesh</Link></li>
             </ul>
           </div>
 
           <div className="site-footer-col">
             <h3 className="site-footer-heading">Get involved</h3>
             <ul className="site-footer-links">
-              <li><Link to="/impact">Volunteer</Link></li>
-              <li><Link to="/contact">Join as member</Link></li>
-              <li><Link to="/contact">Corporate CSR</Link></li>
-              <li><Link to="/about">Individual support</Link></li>
-              <li><Link to="/contact">Careers &amp; internship</Link></li>
+              <li><Link to="/volunteer">Volunteer</Link></li>
+              <li><Link to="/join-ngo">Join as member</Link></li>
+              <li><Link to="/corporate">Corporate CSR</Link></li>
+              <li><Link to="/individual-member">Individual support</Link></li>
+              <li><Link to="/career">Careers</Link></li>
+              <li><Link to="/ngo-internship">Internship</Link></li>
             </ul>
           </div>
 

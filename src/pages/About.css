@@ -270,7 +270,7 @@
   color: #666;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .about-pillars {
     grid-template-columns: repeat(2, 1fr);
   }

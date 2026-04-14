@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -27,6 +28,11 @@ import ProjectDetail from "./pages/ProjectDetail";
 
 function AppContent() {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   const isDonatePage = location.pathname === "/donate";
 
   return (

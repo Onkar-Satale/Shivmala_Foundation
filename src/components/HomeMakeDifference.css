@@ -77,7 +77,7 @@
   border-radius: 2px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .difference-inner {
     flex-direction: column;
   }

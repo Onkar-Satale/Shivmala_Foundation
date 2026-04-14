@@ -33,7 +33,7 @@ body.dark .grid h3 {
 }
 
 /* RESPONSIVE GRID */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }

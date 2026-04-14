@@ -36,22 +36,7 @@ function Hero() {
         ))}
         <div className="hero-banner-overlay" />
 
-        <button
-          type="button"
-          className="hero-nav hero-nav--prev"
-          aria-label="Previous slide"
-          onClick={() => go(-1)}
-        >
-          ‹
-        </button>
-        <button
-          type="button"
-          className="hero-nav hero-nav--next"
-          aria-label="Next slide"
-          onClick={() => go(1)}
-        >
-          ›
-        </button>
+
 
         <div className="hero-banner-inner">
           <div key={slide.kicker + slide.headline} className="hero-text-block">

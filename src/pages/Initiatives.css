@@ -98,7 +98,7 @@
   filter: brightness(1.06);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .initiatives-list {
     grid-template-columns: 1fr;
   }

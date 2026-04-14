@@ -156,7 +156,7 @@
   opacity: 0.9;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .home-campaign-card {
     width: 100%; /* 1 card per viewport */
     min-height: 500px; /* Slightly shorter minimum height for mobile */
