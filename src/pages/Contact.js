@@ -98,7 +98,7 @@ function Contact() {
           className="contact-map"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Shivmala+Foundation,+Bardapur,+Maharashtra&output=embed"
+          src="https://maps.google.com/maps?q=Shivmala+Foundation,+Bardapur,+Maharashtra&t=k&z=12&output=embed"
           allowFullScreen
         />
       </div>
