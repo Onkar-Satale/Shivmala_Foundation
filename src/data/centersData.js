@@ -12,7 +12,7 @@ export const centersRegions = [
     description:
       "Head office and LearnCraft Training Institute in Bardapur, Jalna district. We run digital literacy, robotics awareness, and rural development programmes with schools and village institutions across Maharashtra.",
     address:
-      "Shivmala Foundation (LearnCraft Training Institute), Chhatrapati Shivaji Maharaj Chowk, Near MSEB Substation, Main Road, Bardapur, Maharashtra — 431206",
+      "Shivmala Foundation, Chhatrapati Shivaji Maharaj Chowk, Near MSEB Substation, Main Road, Bardapur, Maharashtra — 431206",
   },
   {
     id: "gujrat",

@@ -72,7 +72,7 @@ function Contact() {
         <div className="contact-card contact-card--red">
           <h3>Address</h3>
           <p>
-            Shivmala Foundation (LearnCraft Training Institute), Chhatrapati Shivaji Maharaj Chowk,
+            Shivmala Foundation, Chhatrapati Shivaji Maharaj Chowk,
             Near MSEB Substation, Main Road, Bardapur, Maharashtra
           </p>
         </div>
