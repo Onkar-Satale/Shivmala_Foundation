@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import "./Footer.css";
 
 const LOGO_SRC = `${process.env.PUBLIC_URL}/images/logo.png`;
@@ -26,11 +25,11 @@ function Footer() {
               and inclusive development for villages and small towns.
             </p>
             <div className="site-footer-social" aria-label="Social links">
-              <a href="https://www.facebook.com/profile.php?id=61581168451292&rdid=7vAf3DWzldTlg9bJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAozBTBKp%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="https://x.com/ShivmalaF" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter /></a>
-              <a href="https://www.instagram.com/shivmalafoundationngo?igsh=ODJkMGIyaWVlZDd0" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
-              <a href="https://www.youtube.com/@shivmalafoundationngo" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><FaYoutube /></a>
+              <a href="https://www.facebook.com/profile.php?id=61581168451292&rdid=7vAf3DWzldTlg9bJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BAozBTBKp%2F#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+              <a href="https://www.instagram.com/shivmalafoundationngo?igsh=ODJkMGIyaWVlZDd0" target="_blank" rel="noopener noreferrer" aria-label="Instagram">in</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">Li</a>
+              <a href="https://www.youtube.com/@shivmalafoundationngo" target="_blank" rel="noopener noreferrer" aria-label="Youtube">Y</a>
             </div>
           </div>
 
@@ -40,21 +39,22 @@ function Footer() {
               <li>
                 <Link to="/centers">All centers</Link>
               </li>
-              <li><Link to="/centers/maharashtra">Maharashtra (Head Office)</Link></li>
-              <li><Link to="/centers/bihar">Bihar</Link></li>
-              <li><Link to="/centers/delhi">Delhi</Link></li>
-              <li><Link to="/centers/jharkhand">Jharkhand</Link></li>
-              <li><Link to="/centers/uttarpradesh">Uttar Pradesh</Link></li>
+              <li>Bardapur (head office)</li>
+              <li>Jalna district programmes</li>
+              <li>Mobile learning camps</li>
+              <li>Partner schools — Maharashtra</li>
+              <li>Online learner network</li>
             </ul>
           </div>
 
           <div className="site-footer-col">
-            <h3 className="site-footer-heading">Shivmala Foundation Quick Links</h3>
+            <h3 className="site-footer-heading">Get involved</h3>
             <ul className="site-footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Shivmala Foundation</Link></li>
-              <li><Link to="/initiatives">Initiatives</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/impact">Volunteer</Link></li>
+              <li><Link to="/contact">Join as member</Link></li>
+              <li><Link to="/contact">Corporate CSR</Link></li>
+              <li><Link to="/about">Individual support</Link></li>
+              <li><Link to="/contact">Careers &amp; internship</Link></li>
             </ul>
           </div>
 
@@ -63,7 +63,7 @@ function Footer() {
             <ul className="site-footer-contact">
               <li>
                 <span className="site-footer-contact-icon" aria-hidden="true">☎</span>
-                <a href="tel:+919552406336">+91 9552406336</a>
+                <a href="tel:+919552406336">+91 8421217140</a>
               </li>
               <li>
                 <span className="site-footer-contact-icon" aria-hidden="true">✉</span>
@@ -82,11 +82,12 @@ function Footer() {
 
       <div className="site-footer-bar" id="download">
         <div className="site-footer-bar-inner">
-          <p>©️ 2026 Shivmala Foundation. All Rights Reserved.</p>
-          <p style={{fontStyle: 'italic', margin: '0 1rem'}}>Dedicated to Rural Maharashtra Digital Empowerment</p>
+          <p>© {new Date().getFullYear()} Shivmala Foundation. All rights reserved.</p>
           <nav className="site-footer-legal" aria-label="Legal">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms &amp; Conditions</a>
+            <a href="#refund">Refund Policy</a>
+            <Link to="/contact">Sitemap</Link>
           </nav>
         </div>
       </div>
