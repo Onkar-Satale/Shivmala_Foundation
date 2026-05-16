@@ -40,7 +40,6 @@ function Footer() {
                 <Link to="/centers">All centers</Link>
               </li>
               <li>Bardapur (head office)</li>
-              <li>Jalna district programmes</li>
               <li>Mobile learning camps</li>
               <li>Partner schools — Maharashtra</li>
               <li>Online learner network</li>

@@ -98,7 +98,7 @@ function Contact() {
           className="contact-map"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Bardapur%20Jalna%20Maharashtra&output=embed"
+          src="https://www.google.com/maps?q=Bardapur%20Maharashtra&output=embed"
           allowFullScreen
         />
       </div>
