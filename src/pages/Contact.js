@@ -1,25 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
-  const [mapUrl, setMapUrl] = useState("https://maps.google.com/maps?q=Shivmala+Foundation,+Bardapur,+Maharashtra&output=embed");
-
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const lat = position.coords.latitude;
-          const lng = position.coords.longitude;
-          setMapUrl(`https://maps.google.com/maps?saddr=${lat},${lng}&daddr=Shivmala+Foundation,+Bardapur,+Maharashtra&output=embed`);
-        },
-        (error) => {
-          console.warn("Location access denied or unavailable. Showing default map.", error);
-        },
-        { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
-      );
-    }
-  }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -115,7 +98,7 @@ function Contact() {
           className="contact-map"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          src={mapUrl}
+          src="https://maps.google.com/maps?q=Shivmala+Foundation,+Bardapur,+Maharashtra&output=embed"
           allowFullScreen
         />
       </div>
