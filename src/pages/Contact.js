@@ -79,9 +79,9 @@ function Contact() {
         <div className="contact-card contact-card--amber">
           <h3>Phone No</h3>
           <p>
-            <a href="tel:+919552406336">+91 9552406336</a>
+            <a href="tel:+919552406336">+91 8999021576</a>
             <br />
-            <a href="tel:+918999021576">+91 8999021576</a>
+            <a href="tel:+918999021576">+91 8421217140</a>
           </p>
         </div>
         <div className="contact-card contact-card--teal">
