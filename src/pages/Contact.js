@@ -15,7 +15,8 @@ function Contact() {
         },
         (error) => {
           console.warn("Location access denied or unavailable. Showing default map.", error);
-        }
+        },
+        { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
       );
     }
   }, []);
