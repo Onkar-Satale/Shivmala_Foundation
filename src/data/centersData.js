@@ -15,15 +15,15 @@ export const centersRegions = [
       "Shivmala Foundation (LearnCraft Training Institute), Chhatrapati Shivaji Maharaj Chowk, Near MSEB Substation, Main Road, Bardapur, Maharashtra — 431206",
   },
   {
-    id: "bihar",
-    name: "Bihar",
+    id: "gujrat",
+    name: "Gujrat",
     mapImage:
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/IN-BR.svg",
-    mapAlt: "Map of Bihar",
+      "https://upload.wikimedia.org/wikipedia/commons/4/40/IN-UP.svg",
+    mapAlt: "Map of Gujrat",
     description:
-      "Education and community-health outreach with local partners. We support school readiness activities, awareness camps, and collaboration with district-level stakeholders where our programmes align.",
+      "Education, sanitation awareness, and agricultural innovation workshops in select districts. We work with volunteers and schools to extend learning beyond the classroom into villages.",
     address:
-      "Partner-led field sites — contact head office for current locations and visit schedules in Bihar.",
+      "Regional visits arranged through partner organisations — enquire at head office for Gujrat activity updates.",
   },
   {
     id: "delhi",
@@ -37,25 +37,14 @@ export const centersRegions = [
       "By appointment — email info@shivmalafoundation.org for Delhi NCR coordination and meeting slots.",
   },
   {
-    id: "jharkhand",
-    name: "Jharkhand",
-    mapImage:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1a/IN-JH.svg",
-    mapAlt: "Map of Jharkhand",
-    description:
-      "Tribal-area outreach and indigenous-culture–sensitive programmes through partner networks. Focus on education access, livelihood dialogues, and community-led planning with local leaders.",
-    address:
-      "Field activities via partner NGOs — write to the foundation for Jharkhand programme calendar and contact points.",
-  },
-  {
-    id: "uttarpradesh",
-    name: "Uttar Pradesh",
+    id: "harayana",
+    name: "Harayana",
     mapImage:
       "https://upload.wikimedia.org/wikipedia/commons/4/40/IN-UP.svg",
-    mapAlt: "Map of Uttar Pradesh",
+    mapAlt: "Map of Harayana ",
     description:
       "Education, sanitation awareness, and agricultural innovation workshops in select districts. We work with volunteers and schools to extend learning beyond the classroom into villages.",
     address:
-      "Regional visits arranged through partner organisations — enquire at head office for Uttar Pradesh activity updates.",
+      "Regional visits arranged through partner organisations — enquire at head office for Harayana activity updates.",
   },
 ];
