@@ -63,6 +63,36 @@ function CenterDetail() {
         </div>
       </section>
 
+      {region.stats && region.achievements && (
+        <section className="center-detail-initiatives">
+          <div className="center-detail-initiatives-header">
+            <h2>Impact & Initiatives in {region.name}</h2>
+            <p>Transforming lives and communities through dedicated support.</p>
+          </div>
+          
+          <div className="center-stats-grid">
+            {region.stats.map((stat, i) => (
+              <div key={i} className="center-stat-box">
+                <div className="center-stat-icon">{stat.icon}</div>
+                <h3 className="center-stat-title">{stat.title}</h3>
+                <p className="center-stat-desc">{stat.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="center-achievements-box">
+            <h3>
+              <span style={{ fontSize: '28px' }}>🏆</span> Key Achievements
+            </h3>
+            <ul className="center-achievements-list">
+              {region.achievements.map((achievement, i) => (
+                <li key={i}>{achievement}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className="center-detail-volunteer">
         <header className="center-detail-hero">
           <h2 className="center-detail-title">Volunteer</h2>

@@ -2,7 +2,7 @@ export const getInvolvedData = {
   "volunteer": {
     title: "Volunteer",
     subtitle: "VOLUNTEER OF SHIVMALA FOUNDATION",
-    image: "/images/1.jpg",
+    image: "https://images.unsplash.com/photo-1593113565214-80afcb4a4282?q=80&w=2069&auto=format&fit=crop",
     content: "Shivmala Foundation, a leading NGO in India, offers a unique opportunity to make a real, grassroot difference. We work with communities across rural Maharashtra to improve learning outcomes, digital literacy, and women's empowerment. By becoming a volunteer for Shivmala Foundation, you practically make a difference to the lives of people. You can choose from various initiatives according to your interest and skills.",
     eligibility: [
       "Person must be 18 years and above of age.",
@@ -20,7 +20,7 @@ export const getInvolvedData = {
   "join-ngo": {
     title: "Join NGO",
     subtitle: "JOIN SHIVMALA FOUNDATION",
-    image: "/images/2.jpg",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628ce2751?q=80&w=2031&auto=format&fit=crop",
     content: "Join Shivmala Foundation to be part of a vibrant team that believes in active change. We aim to nurture leaders who are passionate about bringing positive transformations in society. We invite dynamic individuals who are willing to devote time, skills, and energy for social welfare.",
     eligibility: [
       "Person must be 18 years and above of age.",
@@ -38,7 +38,7 @@ export const getInvolvedData = {
   "corporate": {
     title: "Corporate",
     subtitle: "CORPORATE PARTNERSHIP IN SHIVMALA FOUNDATION",
-    image: "/images/3.jpg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
     content: "Shivmala Foundation invites corporate entities to join hands with us as part of their Corporate Social Responsibility (CSR). Through collaborative efforts, we can amplify our reach and effectively tackle issues related to digital literacy, skill development, and rural empowerment. Together, we can build sustainable models of development.",
     eligibility: [
       "Registered Corporate Entities under Companies Act.",
@@ -55,7 +55,7 @@ export const getInvolvedData = {
   "individual-member": {
     title: "Individual Member",
     subtitle: "JOIN AS A INDIVIDUAL MEMBER",
-    image: "/images/4.jpg",
+    image: "https://images.unsplash.com/photo-1529156069898-49953eb1b5e4?q=80&w=1974&auto=format&fit=crop",
     content: "Shivmala Foundation is one of the best NGOs in India, which not only allows an individual to volunteer but also to become a part of our esteemed organization individually, to be a part of our initiative, and get the golden opportunity of serving society.",
     eligibility: [
       "Person must be 18 years and above of age.",
@@ -74,7 +74,7 @@ export const getInvolvedData = {
   "career": {
     title: "Career",
     subtitle: "START YOUR CAREER AT SHIVMALA FOUNDATION",
-    image: "/images/5.jpg",
+    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1974&auto=format&fit=crop",
     content: "Working at Shivmala Foundation is not just a job, it's a mission to empower lives. We are looking for talented, passionate, and dedicated professionals who share our vision of an inclusive society. Build a rewarding career while bringing meaningful changes to rural communities.",
     eligibility: [
       "Relevant educational qualification and experience as per the applied role.",
@@ -91,7 +91,7 @@ export const getInvolvedData = {
   "ngo-internship": {
     title: "Ngo-Internship",
     subtitle: "NGO-INTERNSHIP PLAN IN SHIVMALA FOUNDATION",
-    image: "/images/6.jpg",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
     content: "Welcome to Shivmala Foundation, where passion meets purpose! Embark on a rewarding journey with our unpaid NGO internships. Our commitment to fostering positive change empowers you to make a tangible impact while gaining invaluable experience. Explore the dynamic realm of social service through hands-on projects.",
     eligibility: [
       "Students currently enrolled in graduate/post-graduate programs.",

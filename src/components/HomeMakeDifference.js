@@ -12,7 +12,7 @@ function HomeMakeDifference() {
             Shivmala Foundation leads women empowerment, rural development, environment conservation, and awareness campaigns.
             We request you to donate to the poor and support these types of causes to create a lasting, significant impact.
           </p>
-          <Link to="/contact" className="difference-btn">
+          <Link to="/initiatives" className="difference-btn">
             READ MORE
           </Link>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import BoardMembersSection from "../components/BoardMembersSection";
 import "./AboutMembers.css";
 
@@ -31,7 +32,7 @@ function AboutMembers() {
         <h1 className="members-main-title">Members</h1>
         <p className="members-sub-title">"BEST NGO FOR CSR IN INDIA SHIVMALA FOUNDATION"</p>
         <div className="members-hero-image">
-          <img src="/images/1.jpg" alt="Shivmala Foundation Members" />
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Shivmala Foundation Members" />
         </div>
       </section>
 
@@ -88,12 +89,14 @@ function AboutMembers() {
             <p>Improving access</p>
           </div>
         </div>
-        <button className="donation-btn">DONATION</button>
+        <Link to="/donate">
+          <button className="donation-btn">DONATION</button>
+        </Link>
       </section>
 
       {/* 5. Sewing Machines Image */}
       <section className="sewing-section">
-        <img src="/images/2.jpg" alt="Empowerment" />
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1931&auto=format&fit=crop" alt="Empowerment" />
       </section>
 
       {/* 6. Dark Banner */}
@@ -121,7 +124,7 @@ function AboutMembers() {
                <h2>Have Any Question?</h2>
                <p>Every minute 5 questions</p>
              </div>
-             <img src="/images/4.jpg" alt="Questions" className="faq-image" />
+             <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop" alt="Questions" className="faq-image" />
           </div>
           <div className="faq-right">
              <div className="accordion">

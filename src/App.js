@@ -27,6 +27,11 @@ import Donate from "./pages/Donate";
 import ProjectDetail from "./pages/ProjectDetail";
 import PillarPage from "./pages/PillarPage";
 
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsCondition from "./pages/TermsCondition";
+import RefundPolicy from "./pages/RefundPolicy";
+import SitemapPage from "./pages/SitemapPage";
+
 function AppContent() {
   const location = useLocation();
 
@@ -70,6 +75,10 @@ function AppContent() {
           <Route path="/download/brochure" element={<Brochure />} />
           <Route path="/download/application-forms" element={<ApplicationForms />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsCondition />} />
+          <Route path="/refund" element={<RefundPolicy />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
         </Routes>
       </main>
 

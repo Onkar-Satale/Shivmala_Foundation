@@ -105,7 +105,7 @@ function HomeCampaignCards() {
                     </div>
                   </div>
                   <Link to="/donate" className="home-campaign-btn">
-                    Read More
+                    Donate Now
                   </Link>
                 </div>
               </li>

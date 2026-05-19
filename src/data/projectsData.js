@@ -3,7 +3,7 @@ export const projectsData = {
     "blood-donation": {
       title: "Blood Donation",
       subtitle: "Empowering Lives through Life-Giving Drops",
-      mainImage: "/images/projects/blood-donation.png",
+      mainImage: "https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=2083&auto=format&fit=crop",
       content: [
         "In a world where every two seconds, someone needs blood, the significance of regular blood donations cannot be underestimated. Recognizing this vital need, Shivmala Foundation has stepped up to organize blood donation camps to save lives, foster awareness, and create a culture of compassion and giving.",
         "At the heart of this noble endeavor lies the vision of the Shivmala Foundation – a world where no one suffers due to a lack of access to safe blood. Their mission is simple yet profound – to encourage voluntary blood donation, raise awareness about the importance of donating blood, and build a sustainable supply of safe blood for those in need.",
@@ -75,7 +75,7 @@ export const projectsData = {
     "ministry-of-minority-affairs": {
       title: "Ministry of Minority Affairs",
       subtitle: "Empowering Minorities for National Development",
-      mainImage: "/images/projects/minority-affairs.png",
+      mainImage: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop",
       content: [
         "The Ministry of Minority Affairs, established by the Government of India, focuses on the socio-economic development of minority communities. Shivmala Foundation aligns with the ministry to ensure that the benefits of government schemes reach the marginalized.",
         "Our NGO actively participates in the implementation and awareness of various schemes tailored for minorities, including scholarships, skill development programs, and infrastructural enhancements.",
@@ -148,7 +148,7 @@ export const projectsData = {
     "community-rehabilitation": {
       title: "Community Rehabilitation",
       subtitle: "Restoring Dignity, Rebuilding Lives",
-      mainImage: "/images/projects/community-rehabilitation.png",
+      mainImage: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2070&auto=format&fit=crop",
       content: [
         "According to WHO, community-based rehabilitation is a comprehensive strategy for involving people with disabilities in the development of their communities and seeks to ensure that disabled people have equal access to rehabilitation and other services and opportunities—health, education, and income—like all other members of society.",
         "Shivmala Foundation implements a robust Community-Based Rehabilitation Programme (CBRP) through the combined efforts of disabled persons themselves, their families, and their communities.",

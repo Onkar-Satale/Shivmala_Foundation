@@ -31,7 +31,7 @@ function HomeWelfareProjects() {
               <li>Skill Training</li>
               <li>Women Empowerment</li>
             </ul>
-            <Link to="/initiatives" className="welfare-project-btn">READ MORE</Link>
+            <Link to="/pillars/healthcare" className="welfare-project-btn">READ MORE</Link>
           </div>
           <div className="welfare-project-list-col">
             <span className="welfare-project-badge">EDUCATION</span>
@@ -41,7 +41,7 @@ function HomeWelfareProjects() {
               <li>Street Children Education</li>
               <li>Women Empowerment</li>
             </ul>
-            <Link to="/initiatives" className="welfare-project-btn">READ MORE</Link>
+            <Link to="/pillars/education" className="welfare-project-btn">READ MORE</Link>
           </div>
         </div>
       </div>

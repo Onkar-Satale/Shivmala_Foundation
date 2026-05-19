@@ -5,7 +5,7 @@
 }
 
 .site-footer-main {
-  padding: clamp(48px, 8vw, 72px) 24px;
+  padding: clamp(32px, 6vw, 48px) 24px;
 }
 
 .site-footer-grid {
@@ -96,17 +96,30 @@
   font-size: 14px;
 }
 
-.site-footer-list li {
+.site-footer-list li,
+.site-footer-links li {
   margin-bottom: 10px;
   padding-left: 14px;
   position: relative;
   color: #ccc;
 }
 
-.site-footer-list li::before {
+.site-footer-list li::before,
+.site-footer-links li::before {
   content: "•";
   position: absolute;
   left: 0;
+  color: var(--color-orange);
+}
+
+.site-footer-list a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-footer-list a:hover,
+.site-footer-list a:active {
   color: var(--color-orange);
 }
 
@@ -114,10 +127,11 @@
   color: #ccc;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 10px;
+  transition: color 0.2s;
 }
 
-.site-footer-links a:hover {
+.site-footer-links a:hover,
+.site-footer-links a:active {
   color: var(--color-orange);
 }
 

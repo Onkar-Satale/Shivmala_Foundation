@@ -206,6 +206,7 @@
   font-family: var(--font-serif, serif);
   font-size: 32px;
   line-height: 1.4;
+  color: #fff;
 }
 
 /* 7. Donors Section */
@@ -283,6 +284,7 @@
 .faq-right {
   flex: 1;
   min-width: 300px;
+  margin-top: 25px;
 }
 
 .accordion-item {

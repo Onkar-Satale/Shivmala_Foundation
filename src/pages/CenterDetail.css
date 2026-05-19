@@ -92,6 +92,114 @@
   margin-top: 40px;
 }
 
+/* Initiatives Section */
+.center-detail-initiatives {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+.center-detail-initiatives-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.center-detail-initiatives-header h2 {
+  font-family: var(--font-serif, serif);
+  font-size: 32px;
+  color: var(--color-text);
+  margin: 0 0 10px;
+}
+
+.center-detail-initiatives-header p {
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.center-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.center-stat-box {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.center-stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: #f26522;
+}
+
+.center-stat-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.center-stat-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.center-stat-desc {
+  font-size: 14px;
+  color: #f26522;
+  font-weight: 700;
+  margin: 0;
+}
+
+.center-achievements-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  border: 1px solid #eaeaea;
+}
+
+.center-achievements-box h3 {
+  font-family: var(--font-serif, serif);
+  font-size: 24px;
+  color: #6a4c9c;
+  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.center-achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center-achievements-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.center-achievements-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f26522;
+  font-size: 16px;
+}
+
 @media (max-width: 1024px) {
   .center-detail-content {
     flex-direction: column;

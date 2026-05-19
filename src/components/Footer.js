@@ -39,21 +39,23 @@ function Footer() {
               <li>
                 <Link to="/centers">All centers</Link>
               </li>
-              <li>Bardapur (head office)</li>
-              <li>Mobile learning camps</li>
-              <li>Partner schools — Maharashtra</li>
-              <li>Online learner network</li>
+              <li><Link to="/centers/maharashtra">Maharashtra</Link></li>
+              <li><Link to="/centers/gujarat">Gujarat</Link></li>
+              <li><Link to="/centers/delhi">Delhi</Link></li>
+              <li><Link to="/centers/haryana">Haryana</Link></li>
             </ul>
           </div>
 
           <div className="site-footer-col">
             <h3 className="site-footer-heading">Get involved</h3>
             <ul className="site-footer-links">
-              <li><Link to="/impact">Volunteer</Link></li>
-              <li><Link to="/contact">Join as member</Link></li>
-              <li><Link to="/contact">Corporate CSR</Link></li>
-              <li><Link to="/about">Individual support</Link></li>
-              <li><Link to="/contact">Careers &amp; internship</Link></li>
+              <li><Link to="/impact">Get Involved</Link></li>
+              <li><Link to="/volunteer">Volunteer</Link></li>
+              <li><Link to="/join-ngo">Join NGO</Link></li>
+              <li><Link to="/corporate">Corporate</Link></li>
+              <li><Link to="/individual-member">Individual Member</Link></li>
+              <li><Link to="/career">Career</Link></li>
+              <li><Link to="/ngo-internship">Ngo-Internship</Link></li>
             </ul>
           </div>
 
@@ -83,10 +85,10 @@ function Footer() {
         <div className="site-footer-bar-inner">
           <p>© {new Date().getFullYear()} Shivmala Foundation. All rights reserved.</p>
           <nav className="site-footer-legal" aria-label="Legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms &amp; Conditions</a>
-            <a href="#refund">Refund Policy</a>
-            <Link to="/contact">Sitemap</Link>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms &amp; Conditions</Link>
+            <Link to="/refund">Refund Policy</Link>
+            <Link to="/sitemap">Sitemap</Link>
           </nav>
         </div>
       </div>
