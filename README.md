@@ -3,7 +3,7 @@
 Welcome to the official repository for the **Shivmala Foundation** website! Our platform is dedicated to making a positive impact by showcasing our campaigns, projects, media, and seamlessly engaging with our community.
 
 ## 🔗 Live Site
-🌍 **Deployed Application:** [https://shivmalafoundation.vercel.app/](https://shivmalafoundation.vercel.app/)
+🌍 **Deployed Application:** [https://shivmalafoundation.vercel.app/](https://shivmalafoundation.vercel.app)
 
 ---
 
