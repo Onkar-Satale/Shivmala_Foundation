@@ -129,6 +129,7 @@
   color: #333;
   outline: none;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .donate-form-input::placeholder {
@@ -145,6 +146,7 @@
   outline: none;
   transition: border-color 0.2s;
   resize: none;
+  box-sizing: border-box;
 }
 
 .donate-form-textarea:focus {

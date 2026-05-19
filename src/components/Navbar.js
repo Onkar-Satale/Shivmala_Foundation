@@ -6,23 +6,23 @@ const LOGO_SRC = `${process.env.PUBLIC_URL}/images/logo.png`;
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileSub, setMobileSub] = useState(null);
+  const [openMenus, setOpenMenus] = useState({});
   const location = useLocation();
 
   useEffect(() => {
     setMenuOpen(false);
-    setMobileSub(null);
+    setOpenMenus({});
   }, [location.pathname, location.hash]);
 
   const closeMenu = () => {
     setMenuOpen(false);
-    setMobileSub(null);
+    setOpenMenus({});
   };
 
   const galleryActive = location.pathname.startsWith("/gallery");
 
   const toggleSub = (key) => {
-    setMobileSub((s) => (s === key ? null : key));
+    setOpenMenus((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
   return (
@@ -106,13 +106,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "about"}
+                  aria-expanded={openMenus["about"]}
                   aria-label="About submenu"
                   onClick={() => toggleSub("about")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "about" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["about"] ? " is-open-mobile" : ""}`}
               >
                 <li>
                   <Link to="/about/members" onClick={closeMenu}>
@@ -147,13 +147,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "projects"}
+                  aria-expanded={openMenus["projects"]}
                   aria-label="Projects submenu"
                   onClick={() => toggleSub("projects")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "projects" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["projects"] ? " is-open-mobile" : ""}`}
               >
                 <li>
                   <Link to="/initiatives" onClick={closeMenu}>
@@ -170,12 +170,12 @@ function Navbar() {
                     <button
                       type="button"
                       className="navbar-mobile-subitemtoggle"
-                      aria-expanded={mobileSub === "projects-csr"}
+                      aria-expanded={openMenus["projects-csr"]}
                       aria-label="CSR submenu"
                       onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleSub("projects-csr"); }}
                     >▾</button>
                   </div>
-                  <ul className={`navbar-subdropdown${mobileSub === "projects-csr" ? " is-open-mobile" : ""}`}>
+                  <ul className={`navbar-subdropdown${openMenus["projects-csr"] ? " is-open-mobile" : ""}`}>
                     <li><Link to="/projects/csr/blood-donation" onClick={closeMenu}>Blood Donation</Link></li>
                     <li><Link to="/projects/csr/free-medicine" onClick={closeMenu}>Free Medicine</Link></li>
                     <li><Link to="/projects/csr/tree-plantation" onClick={closeMenu}>Tree Plantation</Link></li>
@@ -192,12 +192,12 @@ function Navbar() {
                     <button
                       type="button"
                       className="navbar-mobile-subitemtoggle"
-                      aria-expanded={mobileSub === "projects-gov"}
+                      aria-expanded={openMenus["projects-gov"]}
                       aria-label="Government submenu"
                       onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleSub("projects-gov"); }}
                     >▾</button>
                   </div>
-                  <ul className={`navbar-subdropdown${mobileSub === "projects-gov" ? " is-open-mobile" : ""}`}>
+                  <ul className={`navbar-subdropdown${openMenus["projects-gov"] ? " is-open-mobile" : ""}`}>
                     <li><Link to="/projects/government/ministry-of-minority-affairs" onClick={closeMenu}>Ministry of Minority Affairs</Link></li>
                     <li><Link to="/projects/government/ministry-of-social-justice" onClick={closeMenu}>Ministry of Social Justice</Link></li>
                     <li><Link to="/projects/government/ministry-of-culture" onClick={closeMenu}>Ministry of Culture</Link></li>
@@ -214,12 +214,12 @@ function Navbar() {
                     <button
                       type="button"
                       className="navbar-mobile-subitemtoggle"
-                      aria-expanded={mobileSub === "projects-found"}
+                      aria-expanded={openMenus["projects-found"]}
                       aria-label="Foundation submenu"
                       onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleSub("projects-found"); }}
                     >▾</button>
                   </div>
-                  <ul className={`navbar-subdropdown${mobileSub === "projects-found" ? " is-open-mobile" : ""}`}>
+                  <ul className={`navbar-subdropdown${openMenus["projects-found"] ? " is-open-mobile" : ""}`}>
                     <li><Link to="/projects/shivmala-foundation/community-rehabilitation" onClick={closeMenu}>Community Rehabilitation</Link></li>
                     <li><Link to="/projects/shivmala-foundation/job-placement" onClick={closeMenu}>Job Placement</Link></li>
                     <li><Link to="/projects/shivmala-foundation/vocational-training" onClick={closeMenu}>Vocational Training</Link></li>
@@ -243,13 +243,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "media"}
+                  aria-expanded={openMenus["media"]}
                   aria-label="Media submenu"
                   onClick={() => toggleSub("media")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "media" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["media"] ? " is-open-mobile" : ""}`}
               >
                 <li>
                   <Link to="/gallery/photos/1" onClick={closeMenu}>
@@ -279,13 +279,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "involved"}
+                  aria-expanded={openMenus["involved"]}
                   aria-label="Get Involved submenu"
                   onClick={() => toggleSub("involved")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "involved" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["involved"] ? " is-open-mobile" : ""}`}
               >
                 <li><Link to="/impact" onClick={closeMenu}>Our Impact</Link></li>
                 <li><Link to="/volunteer" onClick={closeMenu}>Volunteer</Link></li>
@@ -306,13 +306,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "download"}
+                  aria-expanded={openMenus["download"]}
                   aria-label="Download submenu"
                   onClick={() => toggleSub("download")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "download" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["download"] ? " is-open-mobile" : ""}`}
               >
                 <li>
                   <Link to="/download/certificates" onClick={closeMenu}>
@@ -347,13 +347,13 @@ function Navbar() {
                 <button
                   type="button"
                   className="navbar-mobile-subtoggle"
-                  aria-expanded={mobileSub === "centers"}
+                  aria-expanded={openMenus["centers"]}
                   aria-label="Centers submenu"
                   onClick={() => toggleSub("centers")}
                 />
               </div>
               <ul
-                className={`navbar-dropdown${mobileSub === "centers" ? " is-open-mobile" : ""}`}
+                className={`navbar-dropdown${openMenus["centers"] ? " is-open-mobile" : ""}`}
               >
                 <li>
                   <Link to="/centers/maharashtra" onClick={closeMenu}>

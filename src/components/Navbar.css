@@ -391,7 +391,7 @@
   }
 
   .navbar-dropdown.is-open-mobile {
-    max-height: 500px;
+    max-height: 1200px;
   }
 
   /* Mobile Subdropdown overrides */
@@ -426,7 +426,7 @@
   }
 
   .navbar-subdropdown.is-open-mobile {
-    max-height: 300px;
+    max-height: 600px;
   }
 
   .navbar-subitem-dropdown:hover .navbar-subdropdown {

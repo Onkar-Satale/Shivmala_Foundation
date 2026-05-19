@@ -205,3 +205,12 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+  .center-achievements-box {
+    padding: 20px;
+  }
+  .center-detail-title {
+    font-size: 28px;
+  }
+}

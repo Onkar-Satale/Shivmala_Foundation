@@ -107,3 +107,9 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+  .welfare-project-list {
+    flex-direction: column;
+  }
+}

@@ -35,12 +35,10 @@ function ProjectDetail() {
           <div className="project-detail-main">
             <div className="project-image-wrapper">
               <img src={project.mainImage} alt={project.title} className="project-main-img" />
-              <div className="project-image-overlay">
-                <h2>{project.subtitle}</h2>
-              </div>
             </div>
 
             <div className="project-text-content">
+              <h2 className="project-subtitle">{project.subtitle}</h2>
               {project.content.map((paragraph, idx) => (
                 <p key={idx}>{paragraph}</p>
               ))}
