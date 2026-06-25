@@ -1,4 +1,5 @@
 import React from "react";
+import DonorsSection from "../components/DonorsSection";
 import "./Certificates.css"; // Reusing the same minimalist styles
 
 function ApplicationForms() {
@@ -33,15 +34,7 @@ function ApplicationForms() {
         </div>
       </div>
 
-      <div className="our-donors-section">
-        <h2>Our Donors</h2>
-        <div className="donors-logos">
-          <img src="/images/logo.png" alt="Donor 1" />
-          <img src="/images/logo.png" alt="Donor 2" />
-          <img src="/images/logo.png" alt="Donor 3" />
-          <img src="/images/logo.png" alt="Donor 4" />
-        </div>
-      </div>
+      <DonorsSection className="our-donors-section" />
     </div>
   );
 }

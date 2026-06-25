@@ -14,7 +14,13 @@ function BoardMembersSection({ id }) {
       <ul className="board-grid">
         {boardMembers.map((m) => (
           <li key={m.name} className="board-card">
-            <img src={m.photo} alt="" width={320} height={360} loading="lazy" />
+            <img 
+              src={m.photo.startsWith("http") ? m.photo : `${process.env.PUBLIC_URL}${m.photo}`} 
+              alt={m.name} 
+              width={320} 
+              height={360} 
+              loading="lazy" 
+            />
             <div className="board-card-body">
               <h3>{m.name}</h3>
               <p className="board-role">{m.role}</p>

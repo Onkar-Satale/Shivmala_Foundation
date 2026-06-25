@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DonorsSection from './DonorsSection';
 import '../pages/AboutMembers.css'; // Reuse bottom section styles
 import './PolicyLayout.css';
 
@@ -53,15 +54,7 @@ function PolicyLayout({ title, subtitle, children }) {
       </section>
 
       {/* Donors */}
-      <section className="donors-section" style={{ paddingTop: '50px' }}>
-        <h2>Our Donors</h2>
-        <div className="donors-logos">
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-        </div>
-      </section>
+      <DonorsSection style={{ paddingTop: '50px' }} />
     </div>
   );
 }

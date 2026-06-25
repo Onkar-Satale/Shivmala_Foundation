@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import BoardMembersSection from "../components/BoardMembersSection";
+import DonorsSection from "../components/DonorsSection";
 import "./AboutMembers.css";
 
 function AboutMembers() {
@@ -105,15 +106,7 @@ function AboutMembers() {
       </section>
 
       {/* 7. Donors */}
-      <section className="donors-section">
-        <h2>Our Donors</h2>
-        <div className="donors-logos">
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-           <img src="/images/logo.png" alt="Donor" />
-        </div>
-      </section>
+      <DonorsSection />
 
       {/* 8. FAQ */}
       <section className="faq-section">
