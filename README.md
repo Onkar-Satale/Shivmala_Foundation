@@ -69,4 +69,3 @@ Our interface is crafted with **Rich Aesthetics** in mind:
 ## 🤝 Support & Contribution
 
 Thank you for exploring the Shivmala Foundation project. If you'd like to contribute, please dive into our codebase, follow the established patterns, and help us make a bigger impact!
- this is my curent redm efiel its ngo websiet i need its more detiald redme fiel more big ans mroe detield fiel gieve em 
